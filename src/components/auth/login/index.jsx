@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Navigate, Link } from 'react-router-dom'
-import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../../firebase/auth'
-import { useAuth } from '../../../contexts/authContext'
+// import { Navigate, Link } from 'react-router-dom'
+// import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../firebase/auth'
+// import { useAuth } from '../../../contexts/authContext'
 
-const Login = () => {
-    const { userLoggedIn } = useAuth()
+export const Login = () => {
+    // const { userLoggedIn } = useAuth()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -21,18 +21,18 @@ const Login = () => {
     }
 
     const onGoogleSignIn = (e) => {
-        e.preventDefault()
-        if (!isSigningIn) {
-            setIsSigningIn(true)
-            doSignInWithGoogle().catch(err => {
-                setIsSigningIn(false)
-            })
-        }
+        // e.preventDefault()
+        // if (!isSigningIn) {
+        //     setIsSigningIn(true)
+        //     doSignInWithGoogle().catch(err => {
+        //         setIsSigningIn(false)
+        //     })
+        // }
     }
 
     return (
         <div>
-            {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
+            {/* {userLoggedIn && (<Navigate to={'/home'} replace={true} />)} */}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
@@ -84,7 +84,7 @@ const Login = () => {
                             {isSigningIn ? 'Signing In...' : 'Sign In'}
                         </button>
                     </form>
-                    <p className="text-center text-sm">Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link></p>
+                    {/* <p className="text-center text-sm">Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link></p> */}
                     <div className='flex flex-row text-center w-full'>
                         <div className='border-b-2 mb-2.5 mr-2 w-full'></div><div className='text-sm font-bold w-fit'>OR</div><div className='border-b-2 mb-2.5 ml-2 w-full'></div>
                     </div>
@@ -113,4 +113,3 @@ const Login = () => {
     )
 }
 
-export default Login
