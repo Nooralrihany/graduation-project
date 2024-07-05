@@ -86,9 +86,9 @@ export const Login = () => {
                     </form>
                     {/* <p className="text-center text-sm">Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link></p> */}
                     <div className='flex flex-row text-center w-full'>
-                        <div className='border-b-2 mb-2.5 mr-2 w-full'></div><div className='text-sm font-bold w-fit'>OR</div><div className='border-b-2 mb-2.5 ml-2 w-full'></div>
+                        {/* <div className='border-b-2 mb-2.5 mr-2 w-full'></div><div className='text-sm font-bold w-fit'>OR</div><div className='border-b-2 mb-2.5 ml-2 w-full'></div> */}
                     </div>
-                    <button
+                    {/* <button
                         disabled={isSigningIn}
                         onClick={(e) => { onGoogleSignIn(e) }}
                         className={`w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium  ${isSigningIn ? 'cursor-not-allowed' : 'hover:bg-gray-100 transition duration-300 active:bg-gray-100'}`}>
@@ -106,7 +106,7 @@ export const Login = () => {
                             </defs>
                         </svg>
                         {isSigningIn ? 'Signing In...' : 'Continue with Google'}
-                    </button>
+                    </button> */}
                 </div>
             </main>
         </div>
