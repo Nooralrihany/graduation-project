@@ -58,7 +58,14 @@ export const Navbar = () => {
                 ))}
               </ul>
               <div className="flex space-x-6">
-                <a href="#" className="py-2 px-3 border rounded-md">
+                <Link to="/login" href="#" className="py-2 px-3 border rounded-md">
+                  Sign In
+                </Link>
+                <Link to="/register" href="#" className="py-2 px-3 rounded-md bg-gradient-to-r from-blue-500 to-light-blue-800">
+                  Create an account
+                </Link>
+                
+                {/* <a href="#" className="py-2 px-3 border rounded-md">
                   Sign In
                 </a>
                 <a
@@ -66,7 +73,7 @@ export const Navbar = () => {
                   className="py-2 px-3 rounded-md bg-gradient-to-r from-blue-500 to-light-blue-800"
                 >
                   Create an account
-                </a>
+                </a> */}
               </div>
             </div>
           )}
