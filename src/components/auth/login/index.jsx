@@ -13,11 +13,12 @@ export const Login = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault()
-        if(!isSigningIn) {
-            setIsSigningIn(true)
-            await doSignInWithEmailAndPassword(email, password)
-            // doSendEmailVerification()
-        }
+        console.log(email ,password)
+        // if(!isSigningIn) {
+        //     setIsSigningIn(true)
+        //     await doSignInWithEmailAndPassword(email, password)
+        //     // doSendEmailVerification()
+        // }
     }
 
     const onGoogleSignIn = (e) => {

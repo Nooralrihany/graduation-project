@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Navigate, Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../../../contexts/authContext'
-import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth'
+// import { Navigate, Link, useNavigate } from 'react-router-dom'
+// import { useAuth } from '../../../contexts/authContext'
+// import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth'
 
-const Register = () => {
+ export const Register = () => {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -13,7 +13,7 @@ const Register = () => {
     const [isRegistering, setIsRegistering] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
 
-    const { userLoggedIn } = useAuth()
+    // const { userLoggedIn } = useAuth()
 
     const onSubmit = async (e) => {
         e.preventDefault()
@@ -25,7 +25,7 @@ const Register = () => {
 
     return (
         <>
-            {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
+            {/* {userLoggedIn && (<Navigate to={'/home'} replace={true} />)} */}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
@@ -93,7 +93,7 @@ const Register = () => {
                         </button>
                         <div className="text-sm text-center">
                             Already have an account? {'   '}
-                            <Link to={'/login'} className="text-center text-sm hover:underline font-bold">Continue</Link>
+                            {/* <Link to={'/login'} className="text-center text-sm hover:underline font-bold">Continue</Link> */}
                         </div>
                     </form>
                 </div>
@@ -102,4 +102,4 @@ const Register = () => {
     )
 }
 
-export default Register
+// export default Register

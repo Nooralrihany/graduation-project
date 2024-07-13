@@ -1,17 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Sidebar } from './Sidebar';
-// import { Intro } from './Intro'
-import { Login} from './components/auth/login/index'
+import { Sidebar } from './Sidebar'; // Adjust path if necessary
+import { Login } from './components/auth/login/index';
+import { Register } from './components/auth/register/index';
+import { Home } from './components/auth/home/index';
 
 const App = () => {
   return (
-    <>
-    <Navbar/>
-    <Login/>
-    <Sidebar/>
-    {/* <Intro/> */}
-    </>
-  )
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="appContainer">
+          {/* Use <Routes> instead of <Route> */}
+          <Routes>
+            <Route path="/" element={<Sidebar />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
 }
+
 export default App;
