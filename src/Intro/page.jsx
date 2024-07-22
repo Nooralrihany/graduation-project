@@ -9,7 +9,7 @@ import {
   InfoWindow,
 } from "@vis.gl/react-google-maps";
 
- function Intro() {
+export function Intro() {
   const position = { lat: 53.54, lng: 10 };
   const [open, setOpen] = useState(false);
 
@@ -35,4 +35,4 @@ import {
     </APIProvider>
   );
 }
-export default Intro;
+// export default Intro;

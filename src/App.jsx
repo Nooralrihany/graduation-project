@@ -5,12 +5,14 @@ import { Sidebar } from './Sidebar'; // Adjust path if necessary
 import { Login } from './components/auth/login/index';
 import { Register } from './components/auth/register/index';
 import { Home } from './components/auth/home/index';
+// import {Intro} from './Intro/page'
 
 const App = () => {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        {/* <Intro/> */}
         <div className="appContainer">
           {/* Use <Routes> instead of <Route> */}
           <Routes>
