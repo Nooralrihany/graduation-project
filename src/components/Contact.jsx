@@ -22,7 +22,7 @@ export const Contact = () => {
 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Email</h2>
                 <p class="mt-2 text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
-                <p class="mt-2 text-blue-500 dark:text-blue-400">hello@merakiui.com</p>
+                <p class="mt-2 text-blue-500 dark:text-blue-400">nooralrihany@gmail.com</p>
             </div>
 
             <div>
@@ -37,7 +37,7 @@ export const Contact = () => {
 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Office</h2>
                 <p class="mt-2 text-gray-500 dark:text-gray-400">Come say hello at our office HQ.</p>
-                <p class="mt-2 text-blue-500 dark:text-blue-400">100 Smith Street Collingwood VIC 3066 AU</p>
+                <p class="mt-2 text-blue-500 dark:text-blue-400">Karada , 62 street</p>
             </div>
 
             <div>
@@ -51,7 +51,7 @@ export const Contact = () => {
 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Phone</h2>
                 <p class="mt-2 text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm.</p>
-                <p class="mt-2 text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
+                <p class="mt-2 text-blue-500 dark:text-blue-400">+1 7739459</p>
             </div>
         </div>
     </div>
