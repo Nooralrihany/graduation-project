@@ -15,6 +15,7 @@
 export const navItems = [
   { label: "Features", href: "#" },
   { label: "Contact Us", href: "#" },
+  { label: "Profile", herf: "#" }
 ];
 
 // export const testimonials = [

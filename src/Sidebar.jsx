@@ -1,12 +1,13 @@
 import React from 'react';
-import homephoto from "../src/assets/homephoto.jpg"
 import Cards from './components/Cards';
+import logo222 from './assets/logo222.png'
 
 export const Sidebar = () => {
   return (
     <div>
       <div className=' relative'>
-        <img src="src/assets/homephoto.jpg" alt="home" className=' bg-center w-full' />
+        <img src="src/assets/logo222.png" alt="" />
+        {/* <img src="src/assets/homephoto.jpg" alt="home" className=' bg-center w-full' /> */}
 
 
         <div className='border-2  absolute top-1/2 bg-white  max-w-xl rounded-lg '>

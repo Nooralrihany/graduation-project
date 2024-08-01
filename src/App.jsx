@@ -6,6 +6,8 @@ import { Login } from './components/auth/login/index';
 import { Register } from './components/auth/register/index';
 import { Contact } from './components/Contact';
 import { Home } from './components/auth/home/index';
+import { UserProfile } from './UserProfile';
+import Places from './Places';
 // import {Intro} from './Intro/page'
 
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
           </Routes>
         </div>
         <Contact/>
+        <UserProfile/>
+        <Places/>
       </div>
     </Router>
   );
