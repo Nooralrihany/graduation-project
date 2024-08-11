@@ -8,25 +8,28 @@ import { Contact } from './components/Contact';
 import { Home } from './components/auth/home/index';
 import { UserProfile } from './UserProfile';
 import Places from './Places';
-// import {Intro} from './Intro/page'
+import PlacesPage from '../src/pages/PlacesPage';
+
+
 
 const App = () => {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        {/* <Intro/> */}
         <div className="appContainer">
           {/* Use <Routes> instead of <Route> */}
           <Routes>
             <Route path="/" element={<Sidebar />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/UserProfile" element={<UserProfile/>}/>
+            <Route path="/Contact" element={<Contact/>}/>
           </Routes>
         </div>
         <Contact/>
-        <UserProfile/>
         <Places/>
+        <PlacesPage />
       </div>
     </Router>
   );

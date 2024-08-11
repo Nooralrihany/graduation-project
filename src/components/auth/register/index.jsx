@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 // import { Navigate, Link, useNavigate } from 'react-router-dom'
 // import { useAuth } from '../../../contexts/authContext'
-// import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth'
+import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
 
  export const Register = () => {
 
     // const navigate = useNavigate()
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [confirmPassword, setconfirmPassword] = useState('')
+    const [email, setEmail] = useState('nooralrihany@gmail.com')
+    const [password, setPassword] = useState('123456789')
+    const [confirmPassword, setconfirmPassword] = useState('12345678')
     const [isRegistering, setIsRegistering] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
 
@@ -17,10 +17,10 @@ import React, { useState } from 'react'
 
     const onSubmit = async (e) => {
         e.preventDefault()
-        if(!isRegistering) {
-            setIsRegistering(true)
-            await doCreateUserWithEmailAndPassword(email, password)
-        }
+        // if(!isRegistering) {
+            // setIsRegistering(true)
+            await deCreateUserWithEmailAndPassword(email, password)
+        // }
     }
 
     return (
