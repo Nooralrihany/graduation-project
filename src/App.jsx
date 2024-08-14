@@ -8,7 +8,6 @@ import { Contact } from './components/Contact';
 import { Home } from './components/auth/home/index';
 import { UserProfile } from './UserProfile';
 import Places from './Places';
-import PlacesPage from '../src/pages/PlacesPage';
 
 
 
@@ -29,7 +28,6 @@ const App = () => {
         </div>
         <Contact/>
         <Places/>
-        <PlacesPage />
       </div>
     </Router>
   );
