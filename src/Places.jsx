@@ -6,9 +6,9 @@ const StartPoint = [33.30123868162587, 44.4371813193429];
 
 // Extend the placesData to include coordinates
 const placesData = [
-    { id: 1, name: 'Mansour', description: 'Alamyerat', imageUrl: 'https://example.com/paris.jpg' },
-    { id: 2, name: 'Aladhamyia', description: 'Althobat', imageUrl: 'https://example.com/newyork.jpg', coordinates: Aladhamyia1 },
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'https://example.com/tokyo.jpg' },
+    { id: 1, name: 'Mansour', description: 'Alamyerat', imageUrl: 'https://example.com/paris.jpg' , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 2, name: 'Aladhamyia', description: 'Althobat', imageUrl: 'https://example.com/newyork.jpg', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'https://example.com/tokyo.jpg', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
 ];
 
 const Places = () => {
@@ -21,7 +21,7 @@ const Places = () => {
     const handlePlaceClick = (place) => {
         if (place.coordinates) {
             // Construct a Google Maps URL with both the start point and the place coordinates
-            const url = `https://www.google.com/maps/dir/?api=1&origin=${StartPoint[0]},${StartPoint[1]}&destination=${place.coordinates[0]},${place.coordinates[1]}&travelmode=driving`;
+            const url = `https://www.google.com/maps/dir/?api=1&origin=${place.coordinates.startPoint[0]},${place.coordinates.startPoint[1]}&destination=${place.coordinates.endPoint[0]},${place.coordinates.endPoint[1]}&travelmode=driving`;
             window.open(url, '_blank'); // Open in a new tab
         }
     };
