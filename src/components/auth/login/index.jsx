@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 // import { Navigate, Link } from 'react-router-dom'
-// import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../firebase/auth'
+import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../firebase/auth'
+import { useNavigate } from 'react-router-dom';
+
 // import { useAuth } from '../../../contexts/authContext'
 
 export const Login = () => {
@@ -10,13 +12,17 @@ export const Login = () => {
     const [password, setPassword] = useState('')
     const [isSigningIn, setIsSigningIn] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
+    const navigate = useNavigate();
 
     const onSubmit = async (e) => {
         e.preventDefault()
         console.log(email ,password)
         // if(!isSigningIn) {
         //     setIsSigningIn(true)
-        //     await doSignInWithEmailAndPassword(email, password)
+            await doSignInWithEmailAndPassword(email, password).then(response=>{console.log(response) 
+                navigate('/');
+            }).catch(error=>console.log(error,"error")).finally(()=>console.log("finally"));
+           
         //     // doSendEmailVerification()
         // }
     }
