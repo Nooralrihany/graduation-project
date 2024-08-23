@@ -13,7 +13,7 @@
 // import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "/Cards" },
+  { label: "Places", href: "/Places" },
   { label: "Contact Us", href: "/Contact" },
   { label: "Profile", href: "/UserProfile" },
 ];

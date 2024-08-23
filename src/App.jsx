@@ -27,7 +27,7 @@ const App = () => {
             
           </Routes>
         </div>
-        <Places/>
+        {/* <Places/> */}
       </div>
     </Router>
   );

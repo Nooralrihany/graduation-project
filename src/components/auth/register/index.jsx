@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-// import { Navigate, Link, useNavigate } from 'react-router-dom'
+import { Navigate, Link, useNavigate } from 'react-router-dom'
 // import { useAuth } from '../../../contexts/authContext'
 import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
+// import { useNavigate } from 'react-router-dom'
 
  export const Register = () => {
 
@@ -12,6 +13,8 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
     const [confirmPassword, setconfirmPassword] = useState('12345678')
     const [isRegistering, setIsRegistering] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
+    const navigate = useNavigate();
+
 
     // const { userLoggedIn } = useAuth()
 
@@ -19,13 +22,15 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
         e.preventDefault()
         // if(!isRegistering) {
             // setIsRegistering(true)
-            await deCreateUserWithEmailAndPassword(email, password)
+            await deCreateUserWithEmailAndPassword(email, password).then(response=>{console.log(response) 
+                navigate('/');
+            }).catch(error=>console.log(error,"error")).finally(()=>console.log("finally"));
         // }
     }
 
     return (
         <>
-            {/* {userLoggedIn && (<Navigate to={'/home'} replace={true} />)} */}
+            {userLoggedIn && (<Navigate to={'/'} replace={true} />)}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
@@ -91,10 +96,10 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
                         >
                             {isRegistering ? 'Signing Up...' : 'Sign Up'}
                         </button>
-                        <div className="text-sm text-center">
+                        {/* <div className="text-sm text-center">
                             Already have an account? {'   '}
-                            {/* <Link to={'/login'} className="text-center text-sm hover:underline font-bold">Continue</Link> */}
-                        </div>
+                            <Link to={'/login'} className="text-center text-sm hover:underline font-bold">Continue</Link>
+                        </div> */}
                     </form>
                 </div>
             </main>
