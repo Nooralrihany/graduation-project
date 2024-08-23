@@ -10,7 +10,7 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
 
     const [email, setEmail] = useState('nooralrihany@gmail.com')
     const [password, setPassword] = useState('123456789')
-    const [confirmPassword, setconfirmPassword] = useState('12345678')
+    const [confirmPassword, setconfirmPassword] = useState('123456789')
     const [isRegistering, setIsRegistering] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
     const navigate = useNavigate();
@@ -23,14 +23,17 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
         // if(!isRegistering) {
             // setIsRegistering(true)
             await deCreateUserWithEmailAndPassword(email, password).then(response=>{console.log(response) 
-                navigate('/');
-            }).catch(error=>console.log(error,"error")).finally(()=>console.log("finally"));
+                localStorge.setItem("isLogin" , true)
+                localStorge.setItem("user" , response)
+                // navigate('/');
+            }).catch(error=>{console.log(error,"error")  
+                alert(error.message)}).finally(()=>console.log("finally"));
         // }
     }
 
     return (
         <>
-            {userLoggedIn && (<Navigate to={'/'} replace={true} />)}
+            {/* {userLoggedIn && (<Navigate to={'/'} replace={true} />)} */}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
