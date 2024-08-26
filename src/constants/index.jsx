@@ -13,9 +13,9 @@
 // import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Places", href: "/Places" },
-  { label: "Contact Us", href: "/Contact" },
-  { label: "Profile", href: "/UserProfile" },
+  { label: "الاماكن", href: "/Places" },
+  // { label: "Contact Us", href: "/Contact" },
+  { label: "الملف الشخصي", href: "/UserProfile" },
 ];
 
 // export const testimonials = [

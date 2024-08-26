@@ -23,7 +23,11 @@ export const Navbar = () => {
                         <span className="text-xl tracking-tight">Parking App</span>
                     </div>
                     <ul className="hidden lg:flex ml-14 space-x-12">
-                        {navItems.map((item, index) => (
+                    <li>
+                                    <Link to="/Contact" className="text-gray-800 hover:text-blue-500">
+                                        تواصل معنا
+                                    </Link>
+                                </li> {localStorage.getItem("email") && navItems.map((item, index) => (
                             <li key={index}>
                                 <Link to={item.href} className="text-gray-800 hover:text-blue-500">
                                     {item.label}
@@ -33,12 +37,12 @@ export const Navbar = () => {
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
                         <Link to="/login" className="py-2 px-3 border rounded-md">
-                            Sign In
+                            تسجيل دخول
                         </Link>
                         <Link
                             to="/register"
                             className="bg-gradient-to-r from-blue-500 to-light-blue-800 py-2 px-3 rounded-md ml-2">
-                            Create an account
+                            إنشاء حساب
                         </Link>
                     </div>
                     <div className="lg:hidden md:flex flex-col justify-end">
@@ -50,7 +54,12 @@ export const Navbar = () => {
                 {mobileDrawerOpen && (
                     <div className="fixed bg-white right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden">
                         <ul>
-                            {navItems.map((item, index) => (
+                        <li  className="py-4">
+                                    <Link to="/Contact" className="text-gray-800 hover:text-blue-500">
+                                        تواصل معنا
+                                    </Link>
+                                </li>
+                            {localStorage.getItem("email") && navItems.map((item, index) => (
                                 <li key={index} className="py-4">
                                     <Link to={item.href} className="text-gray-800 hover:text-blue-500">
                                         {item.label}
@@ -60,10 +69,10 @@ export const Navbar = () => {
                         </ul>
                         <div className="flex space-x-6">
                             <Link to="/login" className="py-2 px-3 border rounded-md">
-                                Sign In
+                                تسجيل دخول
                             </Link>
                             <Link to="/register" className="py-2 px-3 rounded-md bg-gradient-to-r from-blue-500 to-light-blue-800">
-                                Create an account
+                                إنشاء حساب
                             </Link>
                         </div>
                     </div>

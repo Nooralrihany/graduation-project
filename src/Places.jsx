@@ -6,15 +6,15 @@ const StartPoint = [33.30123868162587, 44.4371813193429];
 
 // Extend the placesData to include coordinates
 const placesData = [
-    { id: 1, name: 'Mansour', description: 'Alamyerat', imageUrl: 'src/assets/park1.png' , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
-    { id: 2, name: 'Aladhamyia', description: 'Althobat', imageUrl: 'src/assets/park2.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park3.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park4.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park5.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park6.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park7.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park8.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 3, name: 'Aldorah', description: 'abo tayara', imageUrl: 'src/assets/park9.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 1, name: 'المنصور', description: 'شارع الأميرات', imageUrl: 'src/assets/park1.png' , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 2, name: 'الأعظمية', description: 'شارع الضباط', imageUrl: 'src/assets/park2.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 3, name: 'الدورة', description: 'ابو طيارة', imageUrl: 'src/assets/park3.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'حي العامل', description: 'شارع 30', imageUrl: 'src/assets/park4.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'الكرادة', description: 'شارع 62', imageUrl: 'src/assets/park5.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'اليرموك', description: 'الأربع شوارع', imageUrl: 'src/assets/park6.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'زيونة', description: 'الربيعي', imageUrl: 'src/assets/park7.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'الجادرية', description: 'ابو نؤاس', imageUrl: 'src/assets/park8.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    { id: 3, name: 'المنصور', description: 'سيد الحليب', imageUrl: 'src/assets/park9.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
 ];
 
 const Places = () => {

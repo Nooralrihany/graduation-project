@@ -9,6 +9,7 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
     // const navigate = useNavigate()
 
     const [email, setEmail] = useState('nooralrihany@gmail.com')
+    const [fullname, setName] = useState('')
     const [password, setPassword] = useState('123456789')
     const [confirmPassword, setconfirmPassword] = useState('123456789')
     const [isRegistering, setIsRegistering] = useState(false)
@@ -22,10 +23,12 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
         e.preventDefault()
         // if(!isRegistering) {
             // setIsRegistering(true)
-            await deCreateUserWithEmailAndPassword(email, password).then(response=>{console.log(response) 
-                localStorge.setItem("isLogin" , true)
-                localStorge.setItem("user" , response)
-                // navigate('/');
+            await deCreateUserWithEmailAndPassword(email, password).then(response=>{console.log(response.user) 
+                localStorage.setItem("isLogin" , true)
+
+                localStorage.setItem("email" , response.user.email)
+                navigate('/');
+                window.location.reload()
             }).catch(error=>{console.log(error,"error")  
                 alert(error.message)}).finally(()=>console.log("finally"));
         // }
@@ -47,6 +50,18 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
                         onSubmit={onSubmit}
                         className="space-y-4"
                     >
+                        {/* <div>
+                            <label className="text-sm text-gray-600 font-bold">
+                                Full Name
+                            </label>
+                            <input
+                                type="text"
+            
+                                required
+                                value={fullname} onChange={(e) => { setName(e.target.value) }}
+                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:indigo-600 shadow-sm rounded-lg transition duration-300"
+                            />
+                        </div> */}
                         <div>
                             <label className="text-sm text-gray-600 font-bold">
                                 Email
