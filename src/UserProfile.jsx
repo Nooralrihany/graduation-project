@@ -19,7 +19,7 @@ export const UserProfile = () => {
       <div className="p-4 border-t border-gray-200">
         <h3 className="text-lg md:text-xl font-semibold text-gray-800">About</h3>
         <p className="mt-2 text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          زياد علي
         </p>
       </div>
     </div>

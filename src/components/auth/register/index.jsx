@@ -8,7 +8,7 @@ import { deCreateUserWithEmailAndPassword } from '../../firebase/auth'
 
     // const navigate = useNavigate()
 
-    const [email, setEmail] = useState('nooralrihany@gmail.com')
+    const [email, setEmail] = useState('zeyadalrihany@gmail.com')
     const [fullname, setName] = useState('')
     const [password, setPassword] = useState('123456789')
     const [confirmPassword, setconfirmPassword] = useState('123456789')
