@@ -17,9 +17,11 @@ export const UserProfile = () => {
         </div>
       </div>
       <div className="p-4 border-t border-gray-200">
-        <h3 className="text-lg md:text-xl font-semibold text-gray-800">About</h3>
+        <h3 className="text-lg md:text-xl font-semibold text-gray-800">Bio</h3>
         <p className="mt-2 text-gray-600">
-          زياد علي
+         مرحبًا، أنا زياد! أستخدم هذا التطبيق للعثور على أماكن وقوف مريحة وموثوقة في المدينة. أنا مستخدم متكرر وأفضل مواقع وقوف آمنة . دائمًا أبحث عن حلول وقوف سهلة وفعّالة!
+
+
         </p>
       </div>
     </div>
