@@ -16,9 +16,9 @@ export const Sidebar = () => {
         <img src="src/assets/logo222.png" alt="" />
         <div className='border-2 absolute top-1/2 bg-white max-w-xl rounded-lg'>
           <div className="max-w-2xl p-8 bg-blue shadow-lg rounded-lg">
-            <h1 className="text-3xl font-bold text-gray-800 mb-4 uppercase">Welcome to our community</h1>
-            <h4 className="text-xl mb-2">Park your car with us!</h4>
-            <p className="text-gray-600">تطبيق يساعدك في الحصول على مكان لركن سيارتك ب أمان</p>
+            <h1 className="text-3xl font-bold text-gray-800 mb-4 uppercase">أهلا وسهلا بك</h1>
+            <h4 className="text-xl mb-2">اركن سيارتك ويانه !</h4>
+            <p className="text-gray-600">احنه موجودين حتى نساعدك تلكي مكان لركن سيارتك ب أمان</p>
           </div>
         </div>
       </div>

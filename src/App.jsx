@@ -1,9 +1,7 @@
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Sidebar } from './Sidebar'; // Adjust path if necessary
+import { Sidebar } from './Sidebar'; 
 import { Login } from './components/auth/login/index';
 import { Register } from './components/auth/register/index';
 import { Contact } from './components/Contact';
@@ -21,9 +19,9 @@ const App = () => {
             <Route path="/Places" element={<Places/>} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/Userprofile" element={<UserProfile />} /> {/* Adjust path to lowercase */}
-            <Route path="/Contact" element={<Contact />} /> {/* Adjust path to lowercase */}
-            <Route path="/Places" element={<Places />} /> Add route for Places if needed
+            <Route path="/Userprofile" element={<UserProfile />} /> 
+            <Route path="/Contact" element={<Contact />} /> 
+            <Route path="/Places" element={<Places />} /> 
             
           </Routes>
         </div>

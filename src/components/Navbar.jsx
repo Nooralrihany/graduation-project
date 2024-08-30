@@ -20,7 +20,7 @@ export const Navbar = () => {
                         <Link to="/">
                             <img className="h-10 w-10 mr-2" src="src/assets/parking-logo.png" alt="Logo" />
                         </Link>
-                        <span className="text-xl tracking-tight">Parking App</span>
+                        <span className="text-xl tracking-tight">وين أطبك ؟</span>
                     </div>
                     <ul className="hidden lg:flex ml-14 space-x-12">
                     <li>
