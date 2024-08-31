@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Place1 from './assets/park1'
-import Place2 from './assets/park2'
+import Place1 from '../src/assets/park1'
+import Place2 from '../src/assets/park2'
 import Place3 from './assets/park3'
 import Place4 from './assets/park4'
 import Place5 from './assets/park5'
@@ -20,13 +20,13 @@ const StartPoint = [33.30123868162587, 44.4371813193429];
 const placesData = [
     { id: 1, name: 'المنصور', description: 'شارع الأميرات', imageUrl: Place1 , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
     { id: 2, name: 'الأعظمية', description: 'شارع الضباط', imageUrl: Place2, coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
-    { id: 3, name: 'الدورة', description: 'ابو طيارة', imageUrl: '../assets/park3.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 4, name: 'حي العامل', description: 'شارع 30', imageUrl: '../assets/park4.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 5, name: 'الكرادة', description: 'شارع 62', imageUrl: '../assets/park5.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 6, name: 'اليرموك', description: 'الأربع شوارع', imageUrl: '../assets/park6.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 7, name: 'زيونة', description: 'الربيعي', imageUrl: '../assets/park7.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 8, name: 'الجادرية', description: 'ابو نؤاس', imageUrl: '../assets/park8.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
-    { id: 9, name: 'المنصور', description: 'سيد الحليب', imageUrl: '../assets/park9.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 3, name: 'الدورة', description: 'ابو طيارة', imageUrl: '../assets/park3.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 4, name: 'حي العامل', description: 'شارع 30', imageUrl: '../assets/park4.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 5, name: 'الكرادة', description: 'شارع 62', imageUrl: '../assets/park5.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 6, name: 'اليرموك', description: 'الأربع شوارع', imageUrl: '../assets/park6.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 7, name: 'زيونة', description: 'الربيعي', imageUrl: '../assets/park7.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 8, name: 'الجادرية', description: 'ابو نؤاس', imageUrl: '../assets/park8.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
+    // { id: 9, name: 'المنصور', description: 'سيد الحليب', imageUrl: '../assets/park9.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
 ];
 
 const Places = () => {
