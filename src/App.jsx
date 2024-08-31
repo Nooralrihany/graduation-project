@@ -9,6 +9,7 @@ import { UserProfile } from './UserProfile';
 import Places from './Places';
 
 const App = () => {
+  // 
   return (
     <Router>
       <div className="App">
