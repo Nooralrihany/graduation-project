@@ -18,7 +18,7 @@ export const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
                         <Link to="/">
-                            <img className="h-10 w-10 mr-2" src="src/assets/parking-logo.png" alt="Logo" />
+                            <img className="h-10 w-10 mr-2" src="/parking-logo.png" alt="Logo" />
                         </Link>
                         <span className="text-xl tracking-tight">وين أطبك ؟</span>
                     </div>

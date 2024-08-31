@@ -7,7 +7,7 @@ export const UserProfile = () => {
       <div className="flex flex-col md:flex-row items-center p-4">
         <img
           className="w-32 h-32 md:w-24 md:h-24 rounded-full border-2 border-gray-300"
-          src="src/assets/userphoto.png"
+          src="userphoto.png"
           alt="User Avatar"
         />
         <div className="mt-4 md:mt-0 md:ml-4 text-center md:text-left">
