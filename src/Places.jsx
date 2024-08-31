@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import Place1 from '../src/assets/park1'
 import Place2 from '../src/assets/park2'
-import Place3 from './assets/park3'
-import Place4 from './assets/park4'
-import Place5 from './assets/park5'
-import Place6 from './assets/park6'
-import Place7 from './assets/park7'
-import Place8 from './assets/park8'
-import Place9 from './assets/park9'
 
 
 
