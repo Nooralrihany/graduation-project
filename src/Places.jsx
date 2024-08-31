@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Place1 from '../src/assets/park1'
-import Place2 from '../src/assets/park2'
+import Place1 from '/src/assets/park1'
+import Place2 from '/src/assets/park2'
 
 
 
