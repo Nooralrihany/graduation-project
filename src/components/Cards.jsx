@@ -1,6 +1,6 @@
-import cardone from '../assets/cardone.png'
-import cardtwo from '../assets/cardtwo.png'
-import cardthree from '../assets/cardthree.png'
+import cardone from '/assets/cardone.png'
+import cardtwo from '/assets/cardtwo.png'
+import cardthree from '/assets/cardthree.png'
 export const Cards = () => {
     return ( 
   
