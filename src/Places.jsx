@@ -1,4 +1,16 @@
 import React, { useState } from 'react';
+import Place1 from './assets/park1'
+import Place2 from './assets/park2'
+import Place3 from './assets/park3'
+import Place4 from './assets/park4'
+import Place5 from './assets/park5'
+import Place6 from './assets/park6'
+import Place7 from './assets/park7'
+import Place8 from './assets/park8'
+import Place9 from './assets/park9'
+
+
+
 
 // Define the coordinates for Aladhamyia and the Start Point
 const Aladhamyia1 = [33.3695687449225, 44.36174133497602];
@@ -6,8 +18,8 @@ const StartPoint = [33.30123868162587, 44.4371813193429];
 
 // Extend the placesData to include coordinates
 const placesData = [
-    { id: 1, name: 'المنصور', description: 'شارع الأميرات', imageUrl: '../assets/park1' , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
-    { id: 2, name: 'الأعظمية', description: 'شارع الضباط', imageUrl: '../assets/park2.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 1, name: 'المنصور', description: 'شارع الأميرات', imageUrl: Place1 , coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
+    { id: 2, name: 'الأعظمية', description: 'شارع الضباط', imageUrl: Place2, coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}} ,
     { id: 3, name: 'الدورة', description: 'ابو طيارة', imageUrl: '../assets/park3.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
     { id: 4, name: 'حي العامل', description: 'شارع 30', imageUrl: '../assets/park4.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
     { id: 5, name: 'الكرادة', description: 'شارع 62', imageUrl: '../assets/park5.png', coordinates: {startPoint:[33.30123868162587, 44.4371813193429],endPoint:[33.3695687449225, 44.36174133497602]}},
