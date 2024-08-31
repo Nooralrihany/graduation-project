@@ -1,5 +1,5 @@
 import React from 'react'
-import userphoto from '/src/assets/userphoto.png'
+import userphoto from '/assets/userphoto.png'
 
 export const UserProfile = () => {
   return (
